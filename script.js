@@ -1,5 +1,6 @@
 var button = document.getElementById("btn");
 var result = document.getElementById("res");
+var text = document.getElementById("text");
 
 function rollDice() {
   var roll = Math.floor(Math.random() * 6) + 1;
@@ -26,6 +27,7 @@ function rollDice() {
 
   var formattedSum = String(newRes).padStart(2, "0");
 
+  text.style.display = "block"
   result.innerHTML = formattedSum;
  
 }
